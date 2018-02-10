@@ -8,13 +8,11 @@ media_folder: static/assets
 collections:
 - name: illustration
   label: Illustration
-  folder: works
+  folder: illustration
   create: true
   slug: "{{slug}}"
-  filter: { field: type, value: illustration }
   fields: &works_fields
   - { name: title, label: Title, widget: string }
-  - { name: type, label: Type, widget: select, options: [ illustration, narrative, study ]}
   - name: images
     label: Images
     widget: list
@@ -23,15 +21,13 @@ collections:
   - { name: body, label: Body, widget: markdown }
 - name: narrative
   label: Narrative
-  folder: works
+  folder: narrative
   create: true
   slug: "{{slug}}"
-  filter: { field: type, value: narrative }
   fields: *works_fields
 - name: study
-  label: Studies
-  folder: works
+  label: Study
+  folder: study
   create: true
   slug: "{{slug}}"
-  filter: { field: type, value: study }
   fields: *works_fields
