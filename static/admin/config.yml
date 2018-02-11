@@ -8,7 +8,7 @@ media_folder: static/assets
 collections:
 - name: illustration
   label: Illustration
-  folder: illustration
+  folder: works/illustrations
   create: true
   slug: "{{slug}}"
   fields: &works_fields
@@ -16,18 +16,16 @@ collections:
   - name: images
     label: Images
     widget: list
-    field:
-    - { name: url, label: URL, widget: string }
   - { name: body, label: Body, widget: markdown }
 - name: narrative
   label: Narrative
-  folder: narrative
+  folder: works/narratives
   create: true
   slug: "{{slug}}"
   fields: *works_fields
 - name: study
   label: Study
-  folder: study
+  folder: works/studies
   create: true
   slug: "{{slug}}"
   fields: *works_fields
