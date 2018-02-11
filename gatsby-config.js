@@ -3,6 +3,13 @@ module.exports = {
     title: 'Test Gatsby Site',
   },
   plugins: [
+    `gatsby-plugin-glamor`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
