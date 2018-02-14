@@ -12,13 +12,12 @@
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-glamor": "^1.6.12",
     "gatsby-plugin-netlify-cms": "^1.0.7",
+    "gatsby-plugin-react-next": "^1.0.9",
     "gatsby-plugin-typography": "^1.7.14",
     "gatsby-source-filesystem": "^1.5.19",
     "gatsby-transformer-remark": "^1.7.32",
     "glamorous": "^4.11.4",
     "react-flexbox-grid": "^2.0.0",
-    "typography-theme-moraga": "^0.15.10",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "typography-theme-moraga": "^0.15.10"
   }
 }
