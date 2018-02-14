@@ -16,6 +16,7 @@
     "gatsby-source-filesystem": "^1.5.18",
     "gatsby-transformer-remark": "^1.7.31",
     "glamorous": "^4.11.4",
+    "react-flexbox-grid": "^2.0.0",
     "typography-theme-moraga": "^0.15.10"
   }
 }
