@@ -34,49 +34,51 @@ const Li = g.li({
 
 const activeLink = css({
   "fontWeight": "bold",
+  "color": "#000000",
 }).toString();
 
 const inactiveLink = css({
   "color": "#000000",
 }).toString();
 
-export default ({ children }) => (
-  <App>
-    <Sidebar>
-      <Link to={`/`}>
-        <g.H1
-          display={`inline-block`}
-          fontStyle={`normal`}
-        >
-          TEST SITE
-        </g.H1>
-      </Link>
-      <Links>
-        <Li>
-          <Link className={inactiveLink} activeClassName={activeLink} exact to={`/`}>
-            Illustration
-          </Link>
-        </Li>
-        <Li>
-          <Link className={inactiveLink} activeClassName={activeLink} to={`/narratives/`}>
-            Narrative
-          </Link>
-        </Li>
-        <Li>
-          <Link className={inactiveLink} activeClassName={activeLink} to={`/studies/`}>
-            Study
-          </Link>
-        </Li>
-        <Li>
-          <Link className={inactiveLink} activeClassName={activeLink} to={`/about/`}>
-            About
-          </Link>
-        </Li>
+export default ({ children, location }) => {
+  let illustrationLinkClass = inactiveLink;
+  if (location.pathname === "/" || location.pathname.startsWith("/illustrations/")) {
+    illustrationLinkClass = activeLink;
+  }
+  return (
+    <App>
+      <Sidebar>
+        <Link to={`/`}>
+          <g.H1 display={`inline-block`} fontStyle={`normal`}>TEST SITE</g.H1>
+        </Link>
+        <Links>
+          <Li>
+            <Link className={illustrationLinkClass} to={`/`}>
+              Illustration
+            </Link>
+          </Li>
+          <Li>
+            <Link className={inactiveLink} activeClassName={activeLink} to={`/narratives/`}>
+              Narrative
+            </Link>
+          </Li>
+          <Li>
+            <Link className={inactiveLink} activeClassName={activeLink} to={`/studies/`}>
+              Study
+            </Link>
+          </Li>
+          <Li>
+            <Link className={inactiveLink} activeClassName={activeLink} to={`/about/`}>
+              About
+            </Link>
+          </Li>
 
-      </Links>
-    </Sidebar>
-    <Content>
-      {children()}
-    </Content>
-  </App>
-);
+        </Links>
+      </Sidebar>
+      <Content>
+        {children()}
+      </Content>
+    </App>
+  );
+}
