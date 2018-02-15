@@ -6,30 +6,49 @@ import Link from "gatsby-link";
 import { rhythm } from "../utils/typography";
 import glamorous from "glamorous";
 
+css.global('html, body', { "backgroundColor": "rgb(250,245,249)" });
+
 const App = g.div({
   "display": "flex",
+  "flexDirection": "column",
   "margin": `0 auto`,
   "padding": rhythm(2),
   "maxWidth": "1200px",
+});
+
+const AppBody = g.div({
+  "display": "flex",
+  "flex": 1,
 });
 
 const Content = g.div({
   "flex": 1,
 });
 
-const Sidebar = g.div({
+const Sidebar = g.nav({
+  "flex": "0 0 auto",
+  "order": -1,
   "paddingRight": rhythm(1.5),
 });
 
+const SiteTitle = g.h1({
+  "display": "inline-block",
+  "fontWeight": "bold",
+})
 const Links = g.ul({
   "listStyleType": "none",
   "padding": 0,
-  "textTransform": "uppercase",
   "textAlign": "right",
 });
 
 const Li = g.li({
   "marginBottom": 0,
+  "fontFamily": "'Julius Sans One', 'Source Sans Pro', sans-serif"
+})
+
+const Footer = g.footer({
+  "textAlign": "right",
+  "fontSize": "0.75em"
 })
 
 const activeLink = css({
@@ -47,38 +66,43 @@ export default ({ children, location }) => {
     illustrationLinkClass = activeLink;
   }
   return (
-    <App>
-      <Sidebar>
-        <Link to={`/`}>
-          <g.H1 display={`inline-block`} fontStyle={`normal`}>TEST SITE</g.H1>
-        </Link>
-        <Links>
-          <Li>
-            <Link className={illustrationLinkClass} to={`/`}>
-              Illustration
+      <App>
+        <AppBody>
+          <Sidebar>
+            <Link to={`/`}>
+              <SiteTitle>Test Site</SiteTitle>
             </Link>
-          </Li>
-          <Li>
-            <Link className={inactiveLink} activeClassName={activeLink} to={`/narratives/`}>
-              Narrative
-            </Link>
-          </Li>
-          <Li>
-            <Link className={inactiveLink} activeClassName={activeLink} to={`/studies/`}>
-              Study
-            </Link>
-          </Li>
-          <Li>
-            <Link className={inactiveLink} activeClassName={activeLink} to={`/about/`}>
-              About
-            </Link>
-          </Li>
+            <Links>
+              <Li>
+                <Link className={illustrationLinkClass} to={`/`}>
+                  Illustration
+                </Link>
+              </Li>
+              <Li>
+                <Link className={inactiveLink} activeClassName={activeLink} to={`/narratives/`}>
+                  Narrative
+                </Link>
+              </Li>
+              <Li>
+                <Link className={inactiveLink} activeClassName={activeLink} to={`/studies/`}>
+                  Study
+                </Link>
+              </Li>
+              <Li>
+                <Link className={inactiveLink} activeClassName={activeLink} to={`/about/`}>
+                  About
+                </Link>
+              </Li>
 
-        </Links>
-      </Sidebar>
-      <Content>
-        {children()}
-      </Content>
-    </App>
+            </Links>
+          </Sidebar>
+          <Content>
+            {children()}
+          </Content>
+        </AppBody>
+        <Footer>
+          Copyright © {new Date().getFullYear()} keramei. All rights reserved.
+        </Footer>
+      </App>
   );
 }

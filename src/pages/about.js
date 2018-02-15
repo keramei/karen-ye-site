@@ -1,15 +1,19 @@
 import React from "react";
+import g from "glamorous";
+
+const Title = g.h2({
+  display: `inline-block`,
+  width: "100%",
+  textAlign: `center`,
+});
 
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <div>
-      <h1>{frontmatter.title}</h1>
-      <div
-        className="work-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <Title>{frontmatter.title}</Title>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 };

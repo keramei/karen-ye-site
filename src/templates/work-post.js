@@ -1,4 +1,17 @@
 import React from "react";
+import g from "glamorous";
+
+const Title = g.h2({
+  display: `inline-block`,
+  width: "100%",
+  textAlign: `center`,
+});
+
+const Images = g.figure({
+  "display": "flex",
+  "flexDirection": "column",
+  "justifyContent": "center",
+})
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -11,12 +24,11 @@ export default ({ data }) => {
   }
   return (
     <div>
-      <h1>{frontmatter.title}</h1>
-      {images}
-      <div
-        className="work-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <Title>{frontmatter.title}</Title>
+      <Images>
+        {images}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Images>
     </div>
   );
 };
