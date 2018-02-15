@@ -55,12 +55,13 @@ const Overlay = g.div({
     "backgroundColor": "rgba(0,0,0,0.5)",
   }
 })
+
 export default ({ data }) => {
+  if (data.allMarkdownRemark === null) {
+    return (<div>There's nothing here :(</div>)
+  }
   return (
     <div>
-      <g.H1 display={"inline-block"} >
-        Gallery
-      </g.H1>
       <Grid fluid>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) =>
@@ -89,8 +90,13 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-query IndexQuery {
+query GalleryQuery($collection: String!) {
   allMarkdownRemark(
+    filter: {
+      fields: {
+        collection: {eq: $collection}
+      }
+    }
     sort: {
       fields: [frontmatter___title],
       order:ASC,

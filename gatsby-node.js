@@ -5,10 +5,16 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `works` })
+    const collection = slug.split("/")[1]
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+    })
+    createNodeField({
+      node,
+      name: `collection`,
+      value: collection,
     })
   }
 };
@@ -29,6 +35,27 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     `).then(result => {
+      createPage({
+        path: "/",
+        component: path.resolve(`./src/templates/gallery.js`),
+        context: {
+          collection: "illustrations",
+        }
+      });
+      createPage({
+        path: "/narratives/",
+        component: path.resolve(`./src/templates/gallery.js`),
+        context: {
+          collection: "narratives",
+        }
+      });
+      createPage({
+        path: "/studies/",
+        component: path.resolve(`./src/templates/gallery.js`),
+        context: {
+          collection: "studies",
+        }
+      });
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
@@ -38,8 +65,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             slug: node.fields.slug,
           },
         })
-      })
-      resolve()
+      });
+      resolve();
     })
   })
 };
