@@ -10,6 +10,7 @@ const App = g.div({
   "display": "flex",
   "margin": `0 auto`,
   "padding": rhythm(2),
+  "maxWidth": "1200px",
 });
 
 const Content = g.div({
@@ -18,7 +19,6 @@ const Content = g.div({
 
 const Sidebar = g.div({
   "paddingRight": rhythm(1.5),
-  // "width": "100px",
 });
 
 const Links = g.ul({
