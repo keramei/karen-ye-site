@@ -10,15 +10,13 @@ export default ({ data }) => {
     );
   }
   return (
-    <div className="work-container">
-      <div className="work-post">
-        <h1>{frontmatter.title}</h1>
-        {images}
-        <div
-          className="work-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+    <div>
+      <h1>{frontmatter.title}</h1>
+      {images}
+      <div
+        className="work-post-content"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </div>
   );
 };
@@ -26,7 +24,6 @@ export default ({ data }) => {
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         title
         images

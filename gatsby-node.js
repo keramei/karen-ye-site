@@ -10,12 +10,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       node,
       name: `slug`,
       value: slug,
-    })
+    });
     createNodeField({
       node,
       name: `collection`,
       value: collection,
-    })
+    });
   }
 };
 
@@ -57,6 +57,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       });
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        if (node.fields.slug == "/about/") { return; }
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/work-post.js`),
@@ -64,7 +65,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,
           },
-        })
+        });
       });
       resolve();
     })

@@ -18,6 +18,13 @@ module.exports = {
         name: 'works',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'content',
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,
   ],

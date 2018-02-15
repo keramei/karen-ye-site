@@ -29,3 +29,12 @@ collections:
   create: true
   slug: "{{slug}}"
   fields: *works_fields
+- name: pages
+  label: Pages
+  files:
+    - label: About Page
+      name: about
+      file: content/about.yml
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Body, name: body, widget: markdown}
