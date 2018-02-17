@@ -12,7 +12,7 @@ const App = g.div({
   "display": "flex",
   "flexDirection": "column",
   "margin": `0 auto`,
-  "padding": rhythm(2),
+  "padding": rhythm(4),
   "maxWidth": "1200px",
 });
 
@@ -28,12 +28,11 @@ const Content = g.div({
 const Sidebar = g.nav({
   "flex": "0 0 auto",
   "order": -1,
-  "paddingRight": rhythm(1.5),
+  "paddingRight": rhythm(3),
 });
 
 const SiteTitle = g.h1({
   "display": "inline-block",
-  "fontWeight": "bold",
 })
 const Links = g.ul({
   "listStyleType": "none",
@@ -42,8 +41,7 @@ const Links = g.ul({
 });
 
 const Li = g.li({
-  "marginBottom": 0,
-  "fontFamily": "'Julius Sans One', 'Source Sans Pro', sans-serif"
+  "marginBottom": rhythm(1),
 })
 
 const Footer = g.footer({
@@ -52,16 +50,12 @@ const Footer = g.footer({
 })
 
 const activeLink = css({
-  "fontWeight": "bold",
   "color": "#000000",
-}).toString();
-
-const inactiveLink = css({
-  "color": "#000000",
+  "fontWeight": 400,
 }).toString();
 
 export default ({ children, location }) => {
-  let illustrationLinkClass = inactiveLink;
+  let illustrationLinkClass = "";
   if (location.pathname === "/" || location.pathname.startsWith("/illustrations/")) {
     illustrationLinkClass = activeLink;
   }
@@ -70,27 +64,27 @@ export default ({ children, location }) => {
         <AppBody>
           <Sidebar>
             <Link to={`/`}>
-              <SiteTitle>Test Site</SiteTitle>
+              <SiteTitle>test site</SiteTitle>
             </Link>
             <Links>
               <Li>
                 <Link className={illustrationLinkClass} to={`/`}>
-                  Illustration
+                  illustration
                 </Link>
               </Li>
               <Li>
-                <Link className={inactiveLink} activeClassName={activeLink} to={`/narratives/`}>
-                  Narrative
+                <Link activeClassName={activeLink} to={`/narratives/`}>
+                  narrative
                 </Link>
               </Li>
               <Li>
-                <Link className={inactiveLink} activeClassName={activeLink} to={`/studies/`}>
-                  Study
+                <Link activeClassName={activeLink} to={`/studies/`}>
+                  studies
                 </Link>
               </Li>
               <Li>
-                <Link className={inactiveLink} activeClassName={activeLink} to={`/about/`}>
-                  About
+                <Link activeClassName={activeLink} to={`/about/`}>
+                  about
                 </Link>
               </Li>
 

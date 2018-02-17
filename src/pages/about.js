@@ -1,20 +1,26 @@
 import React from "react";
 import g from "glamorous";
 
+import { rhythm } from "../utils/typography";
+
 const Title = g.h2({
   display: `inline-block`,
   width: "100%",
   textAlign: `center`,
 });
 
+const About = g.div({
+  lineHeight: rhythm(2),
+})
+
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <div>
+    <About>
       <Title>{frontmatter.title}</Title>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    </About>
   );
 };
 

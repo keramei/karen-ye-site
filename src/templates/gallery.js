@@ -3,8 +3,6 @@ import g from "glamorous";
 import Link from "gatsby-link";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import { rhythm } from "../utils/typography";
-
 const GalleryImg = g.img({
   "objectFit": "cover",
   "width": "100%",

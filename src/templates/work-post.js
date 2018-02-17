@@ -3,14 +3,17 @@ import g from "glamorous";
 
 const Title = g.h2({
   display: `inline-block`,
-  width: "100%",
+  width: `100%`,
   textAlign: `center`,
+  textTransform: `lowercase`,
+  fontWeight: "500",
 });
 
 const Images = g.figure({
-  "display": "flex",
-  "flexDirection": "column",
-  "justifyContent": "center",
+  display: `flex`,
+  flexDirection: `column`,
+  justifyContent: `center`,
+  textAlign: `center`,
 })
 
 export default ({ data }) => {
@@ -24,9 +27,9 @@ export default ({ data }) => {
   }
   return (
     <div>
-      <Title>{frontmatter.title}</Title>
       <Images>
         {images}
+        <Title>{frontmatter.title}</Title>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Images>
     </div>
