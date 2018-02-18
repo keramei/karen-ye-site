@@ -21,14 +21,18 @@ const AppBody = g.div({
   "flex": 1,
 });
 
-const Content = g.div({
-  "flex": 1,
+const Sidebar = g.nav({
+  "position": "fixed",
 });
 
-const Sidebar = g.nav({
-  "flex": "0 0 auto",
-  "order": -1,
+const SidebarContainer = g.div({
   "paddingRight": rhythm(1.5),
+  "width": "13rem",
+});
+
+const Content = g.div({
+  "flex": "1 1 auto",
+  "overflow": "auto",
 });
 
 const SiteTitle = g.h1({
@@ -64,17 +68,19 @@ export default ({ children, location }) => {
   return (
       <App>
         <AppBody>
-          <Sidebar>
-            <Link to={`/`}>
-              <SiteTitle>test site</SiteTitle>
-            </Link>
-            <Links>
-              <li><NavLink className={illustrationLinkClass} to={`/`}>illustration</NavLink></li>
-              <li><NavLink activeClassName={activeLink} to={`/narratives/`}>sequential</NavLink></li>
-              <li><NavLink activeClassName={activeLink} to={`/studies/`}>studies</NavLink></li>
-              <li><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
-            </Links>
-          </Sidebar>
+          <SidebarContainer>
+            <Sidebar>
+              <Link to={`/`}>
+                <SiteTitle>test site</SiteTitle>
+              </Link>
+              <Links>
+                <li><NavLink className={illustrationLinkClass} to={`/`}>illustration</NavLink></li>
+                <li><NavLink activeClassName={activeLink} to={`/narratives/`}>sequential</NavLink></li>
+                <li><NavLink activeClassName={activeLink} to={`/studies/`}>studies</NavLink></li>
+                <li><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
+              </Links>
+            </Sidebar>
+          </SidebarContainer>
           <Content>
             {children()}
           </Content>

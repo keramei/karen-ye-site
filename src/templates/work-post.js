@@ -18,11 +18,10 @@ const Images = g.figure({
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
   let images = [];
   for (var idx in frontmatter.images) {
-    images.push(
-     <img key={idx} src={frontmatter.images[idx]} />
-    );
+    images.push(<img key={idx} src={frontmatter.images[idx]} />);
   }
   return (
     <div>

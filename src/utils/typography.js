@@ -41,6 +41,9 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   li: {
     marginBottom: 0,
   },
+  html: {
+    overflow: 'auto',
+  }
 
 })
 const typography = new Typography(moragaTheme);
