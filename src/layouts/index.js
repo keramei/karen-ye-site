@@ -12,7 +12,7 @@ const App = g.div({
   "display": "flex",
   "flexDirection": "column",
   "margin": `0 auto`,
-  "padding": rhythm(4),
+  "padding": rhythm(2),
   "maxWidth": "1200px",
 });
 
@@ -28,30 +28,32 @@ const Content = g.div({
 const Sidebar = g.nav({
   "flex": "0 0 auto",
   "order": -1,
-  "paddingRight": rhythm(3),
+  "paddingRight": rhythm(1.5),
 });
 
 const SiteTitle = g.h1({
-  "display": "inline-block",
+  "fontWeight": 300,
+  "fontSize": "3.0rem",
 })
+
 const Links = g.ul({
   "listStyleType": "none",
   "padding": 0,
   "textAlign": "right",
+  "fontSize": '1.25rem',
 });
 
-const Li = g.li({
-  "marginBottom": rhythm(1),
-})
+const NavLink = glamorous(Link)({
+  "fontWeight": 300,
+});
 
 const Footer = g.footer({
   "textAlign": "right",
-  "fontSize": "0.75em"
-})
+  "fontSize": "0.75rem"
+});
 
 const activeLink = css({
   "color": "#000000",
-  "fontWeight": 400,
 }).toString();
 
 export default ({ children, location }) => {
@@ -67,27 +69,10 @@ export default ({ children, location }) => {
               <SiteTitle>test site</SiteTitle>
             </Link>
             <Links>
-              <Li>
-                <Link className={illustrationLinkClass} to={`/`}>
-                  illustration
-                </Link>
-              </Li>
-              <Li>
-                <Link activeClassName={activeLink} to={`/narratives/`}>
-                  narrative
-                </Link>
-              </Li>
-              <Li>
-                <Link activeClassName={activeLink} to={`/studies/`}>
-                  studies
-                </Link>
-              </Li>
-              <Li>
-                <Link activeClassName={activeLink} to={`/about/`}>
-                  about
-                </Link>
-              </Li>
-
+              <li><NavLink className={illustrationLinkClass} to={`/`}>illustration</NavLink></li>
+              <li><NavLink activeClassName={activeLink} to={`/narratives/`}>sequential</NavLink></li>
+              <li><NavLink activeClassName={activeLink} to={`/studies/`}>studies</NavLink></li>
+              <li><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
             </Links>
           </Sidebar>
           <Content>

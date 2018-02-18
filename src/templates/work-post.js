@@ -6,7 +6,6 @@ const Title = g.h2({
   width: `100%`,
   textAlign: `center`,
   textTransform: `lowercase`,
-  fontWeight: "500",
 });
 
 const Images = g.figure({

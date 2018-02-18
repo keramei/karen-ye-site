@@ -9,18 +9,14 @@ const Title = g.h2({
   textAlign: `center`,
 });
 
-const About = g.div({
-  lineHeight: rhythm(2),
-})
-
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <About>
+    <div>
       <Title>{frontmatter.title}</Title>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </About>
+    </div>
   );
 };
 
