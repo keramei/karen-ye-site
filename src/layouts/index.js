@@ -83,7 +83,7 @@ export default ({ children, location }) => {
   return (
       <App>
         <Media
-          query={{maxWidth: "47.999rem"}}
+          query="(max-width: 47.999rem)"
           render={() =>
             <header>
               <Grid fluid>
