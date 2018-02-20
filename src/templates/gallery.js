@@ -3,12 +3,15 @@ import g from "glamorous";
 import Link from "gatsby-link";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
+const GalleryTitle = g.h2({
+  "width": "100%",
+  "textAlign": "center",
+})
 const GalleryImg = g.img({
   "objectFit": "cover",
   "width": "100%",
   "height": "100%",
   "margin": 0,
-
 });
 
 const SquareBox = g.div({
@@ -54,12 +57,13 @@ const Overlay = g.div({
   }
 })
 
-export default ({ data }) => {
+export default ({data, pathContext}) => {
   if (data.allMarkdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
   return (
     <div>
+      <GalleryTitle>{pathContext.collection}</GalleryTitle>
       <Grid fluid>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) =>

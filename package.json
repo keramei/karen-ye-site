@@ -18,10 +18,13 @@
     "gatsby-transformer-remark": "^1.7.32",
     "glamorous": "^4.11.4",
     "immutable": "^3.8.2",
+    "material-ui": "^1.0.0-beta.34",
+    "material-ui-icons": "^1.0.0-beta.17",
     "netlify-cms": "1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-flexbox-grid": "^2.0.0",
+    "react-media": "^1.8.0",
     "typography-theme-moraga": "^0.15.10"
   }
 }
