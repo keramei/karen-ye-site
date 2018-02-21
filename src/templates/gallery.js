@@ -3,6 +3,8 @@ import g from "glamorous";
 import Link from "gatsby-link";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
+import MediaQuery from "react-responsive";
+
 const GalleryTitle = g.h2({
   "width": "100%",
   "textAlign": "center",
@@ -64,7 +66,9 @@ export default ({data, pathContext}) => {
   }
   return (
     <div>
-      <GalleryTitle>{pathContext.collection}</GalleryTitle>
+      <MediaQuery query="only screen and (max-width: 48em)" component="header">
+        <GalleryTitle>{pathContext.collection}</GalleryTitle>
+      </MediaQuery>
       <Grid fluid>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) =>

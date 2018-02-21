@@ -3,6 +3,7 @@ import IconButton from 'material-ui/IconButton';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import MenuIcon from 'material-ui-icons/Menu';
 import Fade from 'material-ui/transitions/Fade';
+import { withStyles } from 'material-ui/styles';
 
 export default class NavMenu extends React.Component {
   state = {
@@ -32,7 +33,7 @@ export default class NavMenu extends React.Component {
           aria-haspopup="true"
           onClick={this.handleClick}
         >
-          <MenuIcon />
+          <MenuIcon style={{height: '2em', width: '2em'}} />
         </IconButton>
         <Menu
           id="nav-menu"

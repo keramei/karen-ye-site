@@ -84,12 +84,10 @@ export default ({ children, location }) => {
   return (
       <App>
         <MediaQuery query="only screen and (max-width: 48em)" component="header">
-          <Grid fluid>
-            <Row>
-              <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
-              <Col xs={3}>
-                <NavMenu>{navLinks}</NavMenu>
-              </Col>
+          <Grid fluid style={{ "paddingBottom": "16px" }} >
+            <Row between="xs" middle="xs">
+              <Col><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
+              <Col><NavMenu>{navLinks}</NavMenu></Col>
             </Row>
           </Grid>
         </MediaQuery>

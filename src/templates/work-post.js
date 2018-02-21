@@ -2,9 +2,6 @@ import React from "react";
 import g from "glamorous";
 
 const Title = g.h2({
-  display: `inline-block`,
-  width: `100%`,
-  textAlign: `center`,
   textTransform: `lowercase`,
 });
 
