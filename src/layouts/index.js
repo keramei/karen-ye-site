@@ -29,12 +29,6 @@ const Sidebar = g.nav({
   "position": "fixed",
 });
 
-const SidebarContainer = g.div({
-  "paddingRight": rhythm(1.5),
-  "width": "13rem",
-  "flex": "0 0 auto",
-});
-
 const Content = g.div({
   "flex": "1 1 auto",
   "overflow": "auto",
@@ -62,6 +56,12 @@ const Footer = g.footer({
   "textAlign": "right",
   "fontSize": "0.75rem"
 });
+
+const sidebarContainer = css({
+  "paddingRight": rhythm(1.5),
+  "width": "13rem",
+  "flex": "0 0 auto",
+}).toString();
 
 const activeLink = css({
   "color": "#000000",
@@ -96,12 +96,12 @@ export default ({ children, location }) => {
         </MediaQuery>
         <AppBody>
           <MediaQuery query="(min-width: 48rem)">
-            <SidebarContainer>
+            <div class={sidebarContainer}>
               <Sidebar>
                 <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
                 <Links>{navLinks}</Links>
               </Sidebar>
-            </SidebarContainer>
+            </div>
           </MediaQuery>
           <Content>
             {children()}
