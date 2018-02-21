@@ -29,11 +29,6 @@ const Sidebar = g.nav({
   "position": "fixed",
 });
 
-const Content = g.div({
-  "flex": "1 1 auto",
-  "overflow": "auto",
-});
-
 const SiteTitle = g.h1({
   "fontWeight": 300,
   "fontSize": "3.0rem",
@@ -61,6 +56,11 @@ const sidebarContainer = css({
   "paddingRight": rhythm(1.5),
   "width": "13rem",
   "flex": "0 0 auto",
+}).toString();
+
+const content = css({
+  "flex": "1 1 auto",
+  "overflow": "auto",
 }).toString();
 
 const activeLink = css({
@@ -103,9 +103,9 @@ export default ({ children, location }) => {
               </Sidebar>
             </div>
           </MediaQuery>
-          <Content>
+          <div class={content}>
             {children()}
-          </Content>
+          </div>
         </AppBody>
         <Footer>
           Copyright © {new Date().getFullYear()} keramei. All rights reserved.

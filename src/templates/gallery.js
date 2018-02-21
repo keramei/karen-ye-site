@@ -50,6 +50,7 @@ const Overlay = g.div({
   "display": "flex",
   "alignItems": "center",
   "justifyContent": "center",
+  "textAlign": "center",
 
   "&:hover": {
     "opacity": 1,
