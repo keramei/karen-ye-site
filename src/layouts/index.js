@@ -25,7 +25,7 @@ const AppBody = g.div({
   "flex": 1,
 });
 
-const Sidebar = g.nav({
+const Sidebar = g.div({
   "position": "fixed",
 });
 
@@ -80,9 +80,10 @@ export default ({ children, location }) => {
     <li key="nl4"><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
   ];
 
+  console.log(sidebarContainer);
   return (
       <App>
-        <MediaQuery query="(max-width: 47.999rem)" component="header">
+        <MediaQuery query="only screen and (max-width: 48em)" component="header">
           <Grid fluid>
             <Row>
               <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
@@ -93,11 +94,13 @@ export default ({ children, location }) => {
           </Grid>
         </MediaQuery>
         <AppBody>
-          <MediaQuery query="(min-width: 48rem)" component="div" className={sidebarContainer}>
-            <Sidebar>
-              <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
-              <Links>{navLinks}</Links>
-            </Sidebar>
+          <MediaQuery query="only screen and (min-width: 48.03em)" component="nav">
+            <div className={sidebarContainer}>
+              <Sidebar>
+                <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
+                <Links>{navLinks}</Links>
+              </Sidebar>
+            </div>
           </MediaQuery>
           <Content>
             {children()}
