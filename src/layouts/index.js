@@ -47,6 +47,11 @@ const NavLink = g(Link)({
   "paddingRight": "8px",
 });
 
+const Content = g.div({
+  "flex": "1 1 auto",
+  "overflow": "auto",
+});
+
 const Footer = g.footer({
   "textAlign": "right",
   "fontSize": "0.75rem"
@@ -56,11 +61,6 @@ const sidebarContainer = css({
   "paddingRight": rhythm(1.5),
   "width": "13rem",
   "flex": "0 0 auto",
-}).toString();
-
-const content = css({
-  "flex": "1 1 auto",
-  "overflow": "auto",
 }).toString();
 
 const activeLink = css({
@@ -82,30 +82,26 @@ export default ({ children, location }) => {
 
   return (
       <App>
-        <MediaQuery query="(max-width: 47.999rem)">
-          <header>
-            <Grid fluid>
-              <Row>
-                <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
-                <Col xs={3}>
-                  <NavMenu>{navLinks}</NavMenu>
-                </Col>
-              </Row>
-            </Grid>
-          </header>
+        <MediaQuery query="(max-width: 47.999rem)" component="header">
+          <Grid fluid>
+            <Row>
+              <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
+              <Col xs={3}>
+                <NavMenu>{navLinks}</NavMenu>
+              </Col>
+            </Row>
+          </Grid>
         </MediaQuery>
         <AppBody>
-          <MediaQuery query="(min-width: 48rem)">
-            <div class={sidebarContainer}>
-              <Sidebar>
-                <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
-                <Links>{navLinks}</Links>
-              </Sidebar>
-            </div>
+          <MediaQuery query="(min-width: 48rem)" component="div" className={sidebarContainer}>
+            <Sidebar>
+              <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
+              <Links>{navLinks}</Links>
+            </Sidebar>
           </MediaQuery>
-          <div class={content}>
+          <Content>
             {children()}
-          </div>
+          </Content>
         </AppBody>
         <Footer>
           Copyright © {new Date().getFullYear()} keramei. All rights reserved.
