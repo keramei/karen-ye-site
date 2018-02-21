@@ -6,7 +6,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { rhythm } from "../utils/typography";
 
-import Media from "react-media";
+import MediaQuery from "react-responsive";
 
 import NavMenu from "../components/NavMenu"
 
@@ -82,33 +82,27 @@ export default ({ children, location }) => {
 
   return (
       <App>
-        <Media
-          query="(max-width: 47.999rem)"
-          render={() =>
-            <header>
-              <Grid fluid>
-                <Row>
-                  <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
-                  <Col xs={3}>
-                    <NavMenu>{navLinks}</NavMenu>
-                  </Col>
-                </Row>
-              </Grid>
-            </header>
-          }
-         />
+        <MediaQuery query="(max-width: 47.999rem)">
+          <header>
+            <Grid fluid>
+              <Row>
+                <Col xs={9}><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
+                <Col xs={3}>
+                  <NavMenu>{navLinks}</NavMenu>
+                </Col>
+              </Row>
+            </Grid>
+          </header>
+        </MediaQuery>
         <AppBody>
-          <Media
-            query="(min-width: 48rem)"
-            render={() =>
-              <SidebarContainer>
-                <Sidebar>
-                  <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
-                  <Links>{navLinks}</Links>
-                </Sidebar>
-              </SidebarContainer>
-            }
-          />
+          <MediaQuery query="(min-width: 48rem)">
+            <SidebarContainer>
+              <Sidebar>
+                <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
+                <Links>{navLinks}</Links>
+              </Sidebar>
+            </SidebarContainer>
+          </MediaQuery>
           <Content>
             {children()}
           </Content>
