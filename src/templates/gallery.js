@@ -60,12 +60,12 @@ const Overlay = g.div({
   }
 })
 
-export default ({data, pathContext}) => {
+export default ({data, pathContext, transition}) => {
   if (data.allMarkdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
   return (
-    <div>
+    <div style={transition && transition.style}>
       <MediaQuery query="only screen and (max-width: 48em)" component="header">
         <GalleryTitle>{pathContext.collection}</GalleryTitle>
       </MediaQuery>

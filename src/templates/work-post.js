@@ -12,7 +12,7 @@ const Images = g.figure({
   textAlign: `center`,
 })
 
-export default ({ data }) => {
+export default ({ data, transition }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
@@ -21,7 +21,7 @@ export default ({ data }) => {
     images.push(<img key={idx} src={frontmatter.images[idx]} />);
   }
   return (
-    <div>
+    <div style={transition && transition.style}>
       <Images>
         {images}
         <Title>{frontmatter.title}</Title>

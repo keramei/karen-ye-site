@@ -9,11 +9,11 @@ const Title = g.h2({
   textAlign: `center`,
 });
 
-export default ({ data }) => {
+export default ({ data, transition }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <div>
+    <div style={transition && transition.style}>
       <Title>{frontmatter.title}</Title>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
