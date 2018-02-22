@@ -1,6 +1,7 @@
 ---
 cover: /assets/spooky.jpg
 title: Spooky
+order: 6
 ---
 ![](https://images.unsplash.com/photo-1495277493816-4c359911b7f1?auto=format&fit=crop&w=746&q=80)
 

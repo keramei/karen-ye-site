@@ -105,7 +105,7 @@ query GalleryQuery($collection: String!) {
       }
     }
     sort: {
-      fields: [frontmatter___title],
+      fields: [frontmatter___order],
       order:ASC,
     }
   ) {
