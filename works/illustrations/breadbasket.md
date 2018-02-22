@@ -1,8 +1,10 @@
 ---
 cover: /assets/breadbasket.jpg
-title: breadbasket
+title: Breadbasket
 ---
 ![Breadbasket](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b2382e61468895.5a6fc5110332b.jpg)
+
+# breadbasket
 
 An exploration of texture.
 
