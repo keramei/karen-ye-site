@@ -9,21 +9,25 @@ const Images = g.figure({
   display: `flex`,
   flexDirection: `column`,
   justifyContent: `center`,
+  alignItems: `center`,
   textAlign: `center`,
 })
 
 export default ({ data, transition }) => {
+  if (data === null || data.markdownRemark === null) {
+    return (<div>There's nothing here :(</div>)
+  }
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { fields, frontmatter, html } = markdownRemark;
 
-  let images = [];
-  for (var idx in frontmatter.images) {
-    images.push(<img key={idx} src={frontmatter.images[idx]} />);
+  let image = null;
+  if (fields.collection !== "narratives") {
+    image = (<img src={frontmatter.cover} />);
   }
   return (
     <div style={transition && transition.style}>
       <Images>
-        {images}
+        {image}
         <Title>{frontmatter.title}</Title>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Images>
@@ -32,11 +36,14 @@ export default ({ data, transition }) => {
 };
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query WorkPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        collection
+      }
       frontmatter {
         title
-        images
+        cover
       }
       html
     }

@@ -13,9 +13,7 @@ collections:
   slug: "{{slug}}"
   fields: &works_fields
   - { name: title, label: Title, widget: string }
-  - name: images
-    label: Images
-    widget: list
+  - { name: cover, label: "Cover Image", widget: string }
   - { name: body, label: Body, widget: markdown }
 - name: narrative
   label: Narrative
@@ -35,6 +33,4 @@ collections:
     - label: About Page
       name: about
       file: content/about.md
-      fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Body, name: body, widget: markdown}
+      fields: *works_fields

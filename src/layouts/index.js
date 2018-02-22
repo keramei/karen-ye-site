@@ -10,8 +10,6 @@ import MediaQuery from "react-responsive";
 
 import NavMenu from "../components/NavMenu"
 
-css.global('html, body', { "backgroundColor": "rgb(250,245,249)" });
-
 const App = g.div({
   "display": "flex",
   "flexDirection": "column",
@@ -80,7 +78,6 @@ export default ({ children, location }) => {
     <li key="nl4"><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
   ];
 
-  console.log(sidebarContainer);
   return (
       <App>
         <MediaQuery query="only screen and (max-width: 48em)" component="header">

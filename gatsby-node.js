@@ -57,7 +57,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       });
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.fields.slug == "/about/") { return; }
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/work-post.js`),

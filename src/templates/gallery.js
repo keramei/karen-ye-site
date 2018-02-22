@@ -61,7 +61,7 @@ const Overlay = g.div({
 })
 
 export default ({data, pathContext, transition}) => {
-  if (data.allMarkdownRemark === null) {
+  if (data === null || data.allMarkdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
   return (
@@ -80,7 +80,7 @@ export default ({data, pathContext, transition}) => {
                 <SquareBox>
                   <SquareContent>
                     <Figure>
-                      <GalleryImg src={node.frontmatter.images[0]} />
+                      <GalleryImg src={node.frontmatter.cover} />
                     </Figure>
                     <Overlay>
                       {node.frontmatter.title}
@@ -117,7 +117,7 @@ query GalleryQuery($collection: String!) {
         }
         frontmatter {
           title
-          images
+          cover
         }
       }
     }

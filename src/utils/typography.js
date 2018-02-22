@@ -43,6 +43,13 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
   html: {
     overflow: 'auto',
+  },
+  'html, body': {
+    backgroundColor: '#fcfcfc',
+  },
+  img: {
+    marginTop: rhythm(0.5),
+    marginBottom: rhythm(0.5),
   }
 
 })
