@@ -47,6 +47,7 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   'html, body': {
     backgroundColor: '#fcfcfc',
   },
+  '@media only screen and (max-width: 340px){html{font-size:87.5%}}': {},
   img: {
     marginTop: rhythm(0.5),
     marginBottom: rhythm(0.5),

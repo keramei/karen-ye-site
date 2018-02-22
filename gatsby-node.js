@@ -43,10 +43,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       });
       createPage({
-        path: "/narratives/",
+        path: "/sequential/",
         component: path.resolve(`./src/templates/gallery.js`),
         context: {
-          collection: "narratives",
+          collection: "sequential",
         }
       });
       createPage({

@@ -16,9 +16,9 @@ collections:
   - { name: cover, label: "Cover Image", widget: image }
   - { name: title, label: Title, widget: string }
   - { name: body, label: Body, widget: markdown }
-- name: narrative
-  label: Narrative
-  folder: works/narratives
+- name: sequential
+  label: Sequential
+  folder: works/sequential
   create: true
   slug: "{{slug}}"
   fields: *works_fields

@@ -73,7 +73,7 @@ export default ({ children, location }) => {
 
   let navLinks = [
     <li key="nl1"><NavLink className={illustrationLinkClass} to={`/`}>illustration</NavLink></li>,
-    <li key="nl2"><NavLink activeClassName={activeLink} to={`/narratives/`}>sequential</NavLink></li>,
+    <li key="nl2"><NavLink activeClassName={activeLink} to={`/sequential/`}>sequential</NavLink></li>,
     <li key="nl3"><NavLink activeClassName={activeLink} to={`/studies/`}>studies</NavLink></li>,
     <li key="nl4"><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
   ];
