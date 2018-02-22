@@ -61,7 +61,7 @@ const Overlay = g.div({
 })
 
 export default ({data, pathContext, transition}) => {
-  if (data === null || data.allMarkdownRemark === null) {
+  if (typeof(data) === 'undefined' || data.allMarkdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
   return (
@@ -69,7 +69,7 @@ export default ({data, pathContext, transition}) => {
       <MediaQuery query="only screen and (max-width: 48em)" component="header">
         <GalleryTitle>{pathContext.collection}</GalleryTitle>
       </MediaQuery>
-      <Grid fluid>
+      <Grid>
         <Row>
           {data.allMarkdownRemark.edges.map(({ node }) =>
             <Col xs={6} md={4} style={{ "paddingBottom": "16px" }} key={node.id}>

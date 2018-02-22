@@ -2,6 +2,9 @@
 title: About Me
 cover: https://images.unsplash.com/photo-1483086431886-3590a88317fe?auto=format&fit=crop&w=746&q=80
 ---
+![](https://images.unsplash.com/photo-1483086431886-3590a88317fe?auto=format&fit=crop&w=746&q=80)
+
+## About Me
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Vivamus aliquet
 lectus ac tortor pulvinar, sit amet commodo massa lobortis. Ut at urna
