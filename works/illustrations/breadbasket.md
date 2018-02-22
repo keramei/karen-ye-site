@@ -1,9 +1,9 @@
 ---
+cover: /assets/breadbasket.jpg
 title: breadbasket
-images:
-  - >-
-    https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b2382e61468895.5a6fc5110332b.jpg
 ---
-an exploration of texture.
+![Breadbasket](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b2382e61468895.5a6fc5110332b.jpg)
 
-pen and clip studio paint, 2017
+An exploration of texture.
+
+Pen and CLIP Studio Paint, 2017
