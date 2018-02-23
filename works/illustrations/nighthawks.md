@@ -3,10 +3,10 @@ cover: /assets/nighthawks.jpg
 title: Nighthawks
 order: 1
 ---
-![](https://mir-s3-cdn-cf.behance.net/project_modules/1400/4e748f61469217.5a6fc7ce4699f.jpg)
+![Nighthawks](https://mir-s3-cdn-cf.behance.net/project_modules/1400/4e748f61469217.5a6fc7ce4699f.jpg)
 
-## nighthawks
+# nighthawks
 
-a tribute to edward hopper.
+A tribute to Edward Hopper.
 
-pen and clip studio paint, 2017
+Pen and CLIP Studio Paint, 2017
