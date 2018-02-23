@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: keramei/test-gatsby-site
+  repo: keramei/karen-ye-site
 
 publish_mode: editorial_workflow
 media_folder: static/assets

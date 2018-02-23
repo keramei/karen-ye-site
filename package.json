@@ -1,6 +1,6 @@
 {
-  "name": "test-gatsby-site",
-  "description": "Test Gatsby Site",
+  "name": "karen-ye-site",
+  "description": "Karen Ye Site",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

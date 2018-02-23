@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Test Gatsby Site',
+    title: 'karen ye',
+    copyrightAuthor: 'Karen Ye'
   },
   plugins: [
     `gatsby-plugin-react-next`,

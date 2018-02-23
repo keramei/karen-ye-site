@@ -65,7 +65,7 @@ const activeLink = css({
   "color": "#000000",
 }).toString();
 
-export default ({ children, location }) => {
+export default ({ data, children, location }) => {
   let illustrationLinkClass = "";
   if (location.pathname === "/" || location.pathname.startsWith("/illustrations/")) {
     illustrationLinkClass = activeLink;
@@ -83,7 +83,7 @@ export default ({ children, location }) => {
         <MediaQuery query="only screen and (max-width: 48em)" component="header">
           <Grid fluid style={{ "paddingBottom": "16px" }} >
             <Row between="xs" middle="xs">
-              <Col><Link to={`/`}><SiteTitle>test site</SiteTitle></Link></Col>
+              <Col><Link to={`/`}><SiteTitle>{data.site.siteMetadata.title}</SiteTitle></Link></Col>
               <Col><NavMenu>{navLinks}</NavMenu></Col>
             </Row>
           </Grid>
@@ -92,7 +92,7 @@ export default ({ children, location }) => {
           <MediaQuery query="only screen and (min-width: 48.03em)" component="nav">
             <div className={sidebarContainer}>
               <Sidebar>
-                <Link to={`/`}><SiteTitle>test site</SiteTitle></Link>
+                <Link to={`/`}><SiteTitle>{data.site.siteMetadata.title}</SiteTitle></Link>
                 <Links>{navLinks}</Links>
               </Sidebar>
             </div>
@@ -102,8 +102,19 @@ export default ({ children, location }) => {
           </Content>
         </AppBody>
         <Footer>
-          Copyright © {new Date().getFullYear()} keramei. All rights reserved.
+          Copyright © {new Date().getFullYear()} {data.site.siteMetadata.copyrightAuthor}. All rights reserved.
         </Footer>
       </App>
   );
 }
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        copyrightAuthor
+      }
+    }
+  }
+`
