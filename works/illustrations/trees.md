@@ -1,12 +1,12 @@
 ---
 cover: https://images.unsplash.com/photo-1483086431886-3590a88317fe?auto=format&fit=crop&w=746&q=80
-title: Aurora Borealis
-order: 2
+title: Trees
+order: 7
 ---
 ![](https://images.unsplash.com/photo-1483086431886-3590a88317fe?auto=format&fit=crop&w=746&q=80)
 
-## aurora borealis
+## trees
 
-"No mother, it's just the Northern Lights"
+Some trees and an aurora.
 
 Credit to https://unsplash.com/@vingtcent.
