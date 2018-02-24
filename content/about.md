@@ -1,6 +1,6 @@
 ---
 cover: /assets/avus.jpg
-title: about
+title: About
 order: 1
 ---
 ![self portrait](/assets/avus.jpg)

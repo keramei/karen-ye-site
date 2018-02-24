@@ -13,6 +13,7 @@
     "gatsby-module-loader": "^1.0.10",
     "gatsby-plugin-glamor": "^1.6.12",
     "gatsby-plugin-netlify-cms": "^1.0.7",
+    "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-react-next": "^1.0.9",
     "gatsby-plugin-typography": "^1.7.14",
     "gatsby-source-filesystem": "^1.5.19",
@@ -25,6 +26,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-flexbox-grid": "^2.0.0",
+    "react-helmet": "^5.2.0",
     "react-responsive": "^4.0.4",
     "relay-compiler": "1.4.1",
     "typography-theme-moraga": "^0.15.10"

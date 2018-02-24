@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'karen ye',
-    copyrightAuthor: 'Karen Ye'
+    title: 'Karen Ye',
   },
   plugins: [
     `gatsby-plugin-react-next`,
@@ -12,6 +11,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {

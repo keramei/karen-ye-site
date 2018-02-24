@@ -1,5 +1,7 @@
 import React from "react";
 import g from "glamorous";
+import Helmet from 'react-helmet'
+
 import Link from "gatsby-link";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
@@ -64,14 +66,17 @@ export default ({data, pathContext, transition}) => {
   if (typeof(data) === 'undefined' || data.allMarkdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
+  let { allMarkdownRemark, site } = data;
+
   return (
     <div style={transition && transition.style}>
+      <Helmet title={site.siteMetadata.title} />
       <MediaQuery query="only screen and (max-width: 48em)" component="header">
         <GalleryTitle>{pathContext.collection}</GalleryTitle>
       </MediaQuery>
       <Grid>
         <Row>
-          {data.allMarkdownRemark.edges.map(({ node }) =>
+          {allMarkdownRemark.edges.map(({ node }) =>
             <Col xs={6} md={4} style={{ "paddingBottom": "16px" }} key={node.id}>
               <Link
                 to={node.fields.slug}
@@ -120,6 +125,11 @@ query GalleryQuery($collection: String!) {
           cover
         }
       }
+    }
+  }
+  site {
+    siteMetadata {
+      title
     }
   }
 }

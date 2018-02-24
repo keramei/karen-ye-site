@@ -30,6 +30,7 @@ const Sidebar = g.div({
 const SiteTitle = g.h1({
   "fontWeight": 300,
   "fontSize": "3.0rem",
+  "textTransform": "lowercase",
 })
 
 const Links = g.ul({
@@ -102,7 +103,7 @@ export default ({ data, children, location }) => {
           </Content>
         </AppBody>
         <Footer>
-          Copyright © {new Date().getFullYear()} {data.site.siteMetadata.copyrightAuthor}. All rights reserved.
+          Copyright © {new Date().getFullYear()} {data.site.siteMetadata.title}. All rights reserved.
         </Footer>
       </App>
   );
@@ -113,7 +114,6 @@ export const query = graphql`
     site {
       siteMetadata {
         title
-        copyrightAuthor
       }
     }
   }

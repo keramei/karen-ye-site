@@ -1,5 +1,6 @@
 import React from "react";
 import g from "glamorous";
+import Helmet from 'react-helmet'
 
 const Images = g.figure({
   display: `flex`,
@@ -13,11 +14,12 @@ export default ({ data, transition }) => {
   if (typeof(data) === 'undefined' || data.markdownRemark === null) {
     return (<div>There's nothing here :(</div>)
   }
-  const { markdownRemark } = data;
-  const { html } = markdownRemark;
+  const { markdownRemark, site } = data;
+  const { frontmatter, html } = markdownRemark;
 
   return (
     <div style={transition && transition.style}>
+      <Helmet title={[frontmatter.title, site.siteMetadata.title].join(" - ")} />
       <Images>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Images>
@@ -28,7 +30,15 @@ export default ({ data, transition }) => {
 export const query = graphql`
   query WorkPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+      }
       html
+    }
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `;
