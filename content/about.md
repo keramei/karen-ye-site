@@ -1,9 +1,9 @@
 ---
-cover: /assets/avus-400px.png
+cover: /assets/avus-3-grey.jpg
 title: About
 order: 1
 ---
-![self portrait](/assets/avus-400px.png)
+![self portrait](/assets/avus-3-grey.jpg)
 
 # about
 
