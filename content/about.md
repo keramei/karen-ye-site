@@ -7,6 +7,6 @@ order: 1
 
 # about
 
-Karen Ye is a student studying illustration at Rhode Island School of Design. She is primarily interested blob:https://kye.netlify.com/3de7b577-b6e7-4edf-8f9d-bbd69f46749ein storytelling in a variety of forms, including prose, comics, and illustrations. Her hobbies include playing video games, watching anime, drinking pearl milk tea, and visiting cat cafes.
+Karen Ye is a student studying illustration at Rhode Island School of Design. She is primarily interested in storytelling in a variety of forms, including prose, comics, and illustrations. Her hobbies include playing video games, watching anime, drinking pearl milk tea, and visiting cat cafes.
 
-Contact at karenyeart@gmail.com / [LinkedIn](https://www.linkedin.com/in/karen-ye/) / [Behance](https://www.behance.net/karenye)
+Contact at karenyeart@gmail.com / [Twitter](https://twitter.com/kei_ae) / [Instagram](https://instagram.com/kei_ae/) / [LinkedIn](https://www.linkedin.com/in/karen-ye/) / [Behance](https://www.behance.net/karenye)
