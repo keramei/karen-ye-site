@@ -1,7 +1,5 @@
 import React from "react";
 import g from "glamorous";
-import Helmet from 'react-helmet'
-
 import Link from "gatsby-link";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
@@ -70,7 +68,6 @@ export default ({data, pathContext, transition}) => {
 
   return (
     <div style={transition && transition.style}>
-      <Helmet title={site.siteMetadata.title} />
       <MediaQuery query="only screen and (max-width: 48em)" component="header">
         <GalleryTitle>{pathContext.collection}</GalleryTitle>
       </MediaQuery>
@@ -125,11 +122,6 @@ query GalleryQuery($collection: String!) {
           cover
         }
       }
-    }
-  }
-  site {
-    siteMetadata {
-      title
     }
   }
 }

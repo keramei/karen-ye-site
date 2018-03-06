@@ -2,6 +2,8 @@ import React from "react";
 import g from "glamorous";
 import { css } from "glamor";
 import Link from "gatsby-link";
+import Helmet from 'react-helmet'
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import { rhythm } from "../utils/typography";
@@ -81,6 +83,16 @@ export default ({ data, children, location }) => {
 
   return (
       <App>
+        <Helmet>
+          <title>{data.site.siteMetadata.title}</title>
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#00aba9" />
+          <meta name="theme-color" content="#ffffff" />
+        </Helmet>
         <MediaQuery query="only screen and (max-width: 48em)" component="header">
           <Grid fluid style={{ "paddingBottom": "16px" }} >
             <Row between="xs" middle="xs">
