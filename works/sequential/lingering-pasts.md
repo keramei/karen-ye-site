@@ -1,6 +1,6 @@
 ---
 cover: /assets/aoi.jpg
-title: Lingering Pasts
+title: lingering pasts
 order: 2
 ---
 # lingering pasts
