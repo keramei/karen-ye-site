@@ -1,6 +1,6 @@
 ---
 cover: /assets/endless-blue.jpg
-title: Endless Blue
+title: endless blue
 order: 1
 ---
 # endless blue
@@ -8,6 +8,8 @@ order: 1
 The first chapter of a proposed longer comic.
 
 Pen and CLIP Studio Paint, 2018
+
+<br>
 
 ![Endless Blue cover](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2c785e62378669.5a8e3dac0b430.jpg)
 
