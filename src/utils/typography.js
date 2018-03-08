@@ -14,10 +14,11 @@ moragaTheme.googleFonts = [
 
 moragaTheme.headerFontFamily = ['Alegreya Sans SC', 'sans-serif'];
 moragaTheme.bodyFontFamily = ['Lato', 'sans-serif'];
+moragaTheme.baseFontSize = '16px';
 moragaTheme.bodyColor = '#848484';
 moragaTheme.bodyWeight = 300;
 moragaTheme.boldWeight = 400;
-moragaTheme.headerWeight = 400;
+moragaTheme.headerWeight = 300;
 
 moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   a: {
@@ -33,7 +34,9 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     display: 'inline-block',
     marginBottom: rhythm(0.25),
     color: 'rgb(0,0,0)',
-    fontSize: '1.75rem',
+  },
+  h2: {
+    fontWeight: 400,
   },
   p: {
     marginBottom: 0,
@@ -46,8 +49,8 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
   '@media only screen and (max-width: 340px){html{font-size:87.5%}}': {},
   img: {
-    marginTop: rhythm(0.5),
-    marginBottom: rhythm(0.5),
+    paddingTop: rhythm(0.25),
+    paddingBottom: rhythm(0.25),
   }
 
 })

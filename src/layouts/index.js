@@ -16,7 +16,7 @@ const App = g.div({
   "display": "flex",
   "flexDirection": "column",
   "margin": `0 auto`,
-  "padding": rhythm(2),
+  "padding": rhythm(2.5),
   "maxWidth": "1200px",
 });
 
@@ -30,8 +30,7 @@ const Sidebar = g.div({
 });
 
 const SiteTitle = g.h1({
-  "fontWeight": 300,
-  "fontSize": "3.0rem",
+  "fontSize": "3.5rem",
   "textTransform": "lowercase",
 })
 
@@ -39,7 +38,7 @@ const Links = g.ul({
   "listStyleType": "none",
   "padding": 0,
   "textAlign": "right",
-  "fontSize": '1.25rem',
+  "fontSize": '1.375rem',
 });
 
 const NavLink = g(Link)({
@@ -59,8 +58,7 @@ const Footer = g.footer({
 });
 
 const sidebarContainer = css({
-  "paddingRight": rhythm(1.5),
-  "width": "13rem",
+  "width": "15rem",
   "flex": "0 0 auto",
 }).toString();
 
