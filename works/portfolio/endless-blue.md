@@ -1,7 +1,7 @@
 ---
 cover: /assets/endless-blue.jpg
 title: Endless Blue
-order: 0
+order: 1
 ---
 # endless blue
 

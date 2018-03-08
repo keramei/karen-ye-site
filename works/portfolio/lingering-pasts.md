@@ -1,11 +1,11 @@
 ---
 cover: /assets/aoi.jpg
 title: Lingering Pasts
-order: 1
+order: 2
 ---
 # lingering pasts
 
-Three mock storybook spreads for a written short story that occurs after [Endless Blue](http://karen-ye.com/sequential/endless-blue/).
+Three mock storybook spreads for a written short story that occurs after [Endless Blue](http://karen-ye.com/works/endless-blue/).
 
 CLIP Studio Paint, 2017
 

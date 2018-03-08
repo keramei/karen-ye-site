@@ -19,7 +19,7 @@ collections:
   - { name: body, label: Body, widget: markdown }
 - name: sequential
   label: Sequential
-  folder: works/sequential
+  folder: works/portfolio
   create: true
   slug: "{{slug}}"
   fields: *works_fields

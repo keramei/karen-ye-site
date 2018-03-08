@@ -47,6 +47,12 @@ const NavLink = g(Link)({
   "paddingRight": "8px",
 });
 
+const FixedLink = g.a({
+  "fontWeight": 300,
+  "paddingLeft": "8px",
+  "paddingRight": "8px",
+});
+
 const Content = g.div({
   "flex": "1 1 auto",
   "overflow": "auto",
@@ -67,17 +73,21 @@ const activeLink = css({
 }).toString();
 
 export default ({ data, children, location }) => {
-  let illustrationLinkClass = "";
-  if (location.pathname === "/" || location.pathname.startsWith("/illustrations/")) {
-    illustrationLinkClass = activeLink;
-  }
+  let navLinks = data.allMarkdownRemark.edges.map(({ node }) => {
+    let props = {
+      activeClassName: activeLink,
+      to: node.fields.slug,
+    };
+    if (node.fields.slug === "/") {
+      props = {to: node.fields.slug}
+      if (location.pathname === "/") {
+        props.className = activeLink;
+      }
+    }
+    return (<li key={node.fields.slug}><NavLink {...props}>{node.frontmatter.title}</NavLink></li>);
+  });
 
-  let navLinks = [
-    <li key="nl1"><NavLink className={illustrationLinkClass} to={`/`}>illustration</NavLink></li>,
-    <li key="nl2"><NavLink activeClassName={activeLink} to={`/sequential/`}>sequential</NavLink></li>,
-    <li key="nl3"><NavLink activeClassName={activeLink} to={`/studies/`}>studies</NavLink></li>,
-    <li key="nl4"><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
-  ];
+  navLinks.push()
 
   return (
       <App>
@@ -105,6 +115,10 @@ export default ({ data, children, location }) => {
               <Sidebar>
                 <Link to={`/`}><SiteTitle>{data.site.siteMetadata.title}</SiteTitle></Link>
                 <Links>{navLinks}</Links>
+                <Links>
+                  <li><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
+                  <li><FixedLink href="/assets/resume.pdf">resume</FixedLink></li>
+                </Links>
               </Sidebar>
             </div>
           </MediaQuery>
@@ -124,6 +138,28 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(
+      filter: {
+        fields: {
+          collection: {eq: "portfolio"}
+        }
+      }
+      sort: {
+        fields: [frontmatter___order],
+        order:ASC,
+      }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }

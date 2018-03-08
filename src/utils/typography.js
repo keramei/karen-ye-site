@@ -25,6 +25,7 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     fontWeight: 400,
     color: '#999999',
     textDecoration: 'none',
+    transition: `250ms`,
   },
   'a:hover': {
     textDecoration: 'none',
