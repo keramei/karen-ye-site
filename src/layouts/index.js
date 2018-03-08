@@ -89,6 +89,11 @@ export default ({ data, children, location }) => {
 
   navLinks.push()
 
+  let fixedLinks = [
+    <li key="fl1"><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>,
+    <li key="fl2"><FixedLink href="/assets/resume.pdf">resume</FixedLink></li>
+  ];
+
   return (
       <App>
         <Helmet>
@@ -105,7 +110,7 @@ export default ({ data, children, location }) => {
           <Grid fluid style={{ "paddingBottom": "16px" }} >
             <Row between="xs" middle="xs">
               <Col><Link to={`/`}><SiteTitle>{data.site.siteMetadata.title}</SiteTitle></Link></Col>
-              <Col><NavMenu>{navLinks}</NavMenu></Col>
+              <Col><NavMenu>{navLinks.concat(fixedLinks)}</NavMenu></Col>
             </Row>
           </Grid>
         </MediaQuery>
@@ -115,10 +120,7 @@ export default ({ data, children, location }) => {
               <Sidebar>
                 <Link to={`/`}><SiteTitle>{data.site.siteMetadata.title}</SiteTitle></Link>
                 <Links>{navLinks}</Links>
-                <Links>
-                  <li><NavLink activeClassName={activeLink} to={`/about/`}>about</NavLink></li>
-                  <li><FixedLink href="/assets/resume.pdf">resume</FixedLink></li>
-                </Links>
+                <Links>{fixedLinks}</Links>
               </Sidebar>
             </div>
           </MediaQuery>
