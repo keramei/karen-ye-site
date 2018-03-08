@@ -5,12 +5,11 @@ order: 2
 ---
 # lingering pasts
 
-Three mock storybook spreads for a written short story that occurs after [Endless Blue](http://karen-ye.com/works/endless-blue/).
+Three mock storybook spreads for a written short story that occurs after [Endless Blue](https://karen-ye.com/portfolio/endless-blue/).
 
 CLIP Studio Paint, 2017
 
 <br>
-
 
 ![Lingering Pasts p.1](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eee54862416993.5a8f58c60a155.jpg)
 
