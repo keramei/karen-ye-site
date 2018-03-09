@@ -38,6 +38,7 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
   h2: {
     fontWeight: 400,
+    fontSize: "1.35rem",
   },
   p: {
     marginBottom: 0,

@@ -37,8 +37,10 @@ const SiteTitle = g.h1({
 const Links = g.ul({
   "listStyleType": "none",
   "padding": 0,
+  "marginBottom": rhythm(0.5),
   "textAlign": "right",
   "fontSize": '1.375rem',
+  "textTransform": "lowercase",
 });
 
 const NavLink = g(Link)({
