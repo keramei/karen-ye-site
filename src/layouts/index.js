@@ -40,13 +40,13 @@ const Links = g.ul({
   "marginBottom": rhythm(0.5),
   "textAlign": "right",
   "fontSize": '1.375rem',
-  "textTransform": "lowercase",
 });
 
 const NavLink = g(Link)({
   "fontWeight": 300,
   "paddingLeft": "8px",
   "paddingRight": "8px",
+  "textTransform": "lowercase",
 });
 
 const FixedLink = g.a({

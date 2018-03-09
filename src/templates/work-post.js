@@ -17,9 +17,13 @@ export default ({ data, transition }) => {
   const { markdownRemark, site } = data;
   const { frontmatter, html } = markdownRemark;
 
+  let title = [frontmatter.title, site.siteMetadata.title].join(" - ")
+  if (frontmatter.title === "Illustrations") {
+    title = site.siteMetadata.title;
+  }
   return (
     <div style={transition && transition.style}>
-      <Helmet title={[frontmatter.title, site.siteMetadata.title].join(" - ")} />
+      <Helmet title={title} />
       <Images>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Images>
