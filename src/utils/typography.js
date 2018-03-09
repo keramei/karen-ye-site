@@ -33,7 +33,7 @@ moragaTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   },
   'h1, h2': {
     display: 'inline-block',
-    marginBottom: rhythm(0.25),
+    marginBottom: rhythm(0.13),
     color: 'rgb(0,0,0)',
   },
   h2: {
