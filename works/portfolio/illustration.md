@@ -1,6 +1,6 @@
 ---
 cover: /assets/breadbasket.jpg
-title: illustrations
+title: Illustrations
 order: 0
 ---
 # illustrations
