@@ -1,6 +1,6 @@
 ---
 cover: /assets/aoi.jpg
-title: Lingering Pasts
+title: Endless Blue
 order: 1
 ---
 # lingering pasts
