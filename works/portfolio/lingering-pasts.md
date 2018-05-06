@@ -11,7 +11,9 @@ Endless Blue is an ongoing project exploring the journey of two characters, Aoi 
 
 ## endless blue, a novel
 
+A series of book illustrations for a proposed novel.
 
+CLIP Studio Paint and Photoshop, 2018
 
 ![Endless Blue Cover](/assets/endless_1_clr.jpg)
 
