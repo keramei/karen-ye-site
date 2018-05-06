@@ -4,7 +4,7 @@ title: Studies
 order: 2
 ---
 # studies
-
+<br>
 <br>
 
 ![Studio Ghibli Color Studies](/assets/studies-together.jpg)
