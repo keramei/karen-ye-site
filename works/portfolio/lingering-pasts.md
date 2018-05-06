@@ -11,7 +11,31 @@ Endless Blue is an ongoing project exploring the journey of two characters, Aoi 
 
 ## endless blue, a novel
 
-![]()
+
+
+![Endless Blue Cover](/assets/endless_1_clr.jpg)
+
+![Menagerie](/assets/endless_2_clr.jpg)
+
+<br>
+
+![Endless Blue Cover: No text, line only](/assets/endless_1_comparison.jpg)
+
+![Canyon Island Costumes](/assets/endless_1_costumes.jpg)
+
+![Canyon Island Creatures](/assets/endless_1_animals.jpg)
+
+<br>
+
+![Menagerie: No text, line only](/assets/endless_2_comparison.jpg)
+
+![Menagerie: Costumes](/assets/endless_2_costumes.jpg)
+
+![Menagerie: Creatures](/assets/endless_2_animals.jpg)
+
+<br>
+
+<br>
 
 ## lingering pasts
 
@@ -26,6 +50,10 @@ CLIP Studio Paint, 2017
 ![Lingering Pasts p.2](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c2693462416993.5a8f58c609d8a.jpg)
 
 ![Lingering Pasts p.3](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d5a22862416993.5a8f58c609885.jpg)
+
+<br>
+
+<br>
 
 ## endless blue ch.0
 
