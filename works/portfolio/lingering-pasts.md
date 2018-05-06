@@ -5,9 +5,17 @@ order: 1
 ---
 # endless blue
 
+Endless Blue is an ongoing project exploring the journey of two characters, Aoi and Top, as they travel from island to island in search of Aoi's home.
 
+<br>
 
-Three mock storybook spreads for a written short story that occurs after [Endless Blue](https://karen-ye.com/portfolio/endless-blue/).
+## endless blue, a novel
+
+![]()
+
+## lingering pasts
+
+Mock storybook spreads for a written short story that occurs after Endless Blue Ch.0.
 
 CLIP Studio Paint, 2017
 
@@ -19,7 +27,7 @@ CLIP Studio Paint, 2017
 
 ![Lingering Pasts p.3](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d5a22862416993.5a8f58c609885.jpg)
 
-# endless blue
+## endless blue ch.0
 
 The first chapter of a proposed longer comic.
 
