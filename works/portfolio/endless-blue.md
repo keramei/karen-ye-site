@@ -1,5 +1,5 @@
 ---
-cover: /assets/endless-blue.jpg
+cover: /assets/cubes.jpg
 title: Studies
 order: 2
 ---
