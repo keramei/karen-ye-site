@@ -5,6 +5,8 @@ order: 2
 ---
 # studies
 
+<br>
+
 ![Studio Ghibli Color Studies](/assets/studies-together.jpg)
 
 ## background color studies
