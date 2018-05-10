@@ -4,10 +4,11 @@ title: Studies
 order: 2
 ---
 # studies
+
 <br>
 <br>
 
-![Studio Ghibli Color Studies](/assets/studies-together.jpg)
+![Studio Ghibli Color Studies](/assets/studies-together-v2.jpg)
 
 ## background color studies
 
