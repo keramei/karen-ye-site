@@ -8,7 +8,7 @@ order: 2
 <br>
 <br>
 
-![Studio Ghibli Color Studies](/assets/studies-together-v2.jpg)
+![Studio Ghibli Color Studies](https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/c105e365726191.5afdd5ed23c13.jpg)
 
 ## background color studies
 
@@ -19,9 +19,9 @@ Mixed media, 2018
 <br>
 <br>
 
-![Apples](/assets/apples_900_lower.jpg)
+![Apples](https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/0cbacc65726191.5afdd5ed22697.jpg)
 
-![Pear](/assets/pear_900_lower.jpg)
+![Pear](https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/de1caf65726191.5afdd5ed24468.jpg)
 
 ## fruit paintings
 
