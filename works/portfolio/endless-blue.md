@@ -44,7 +44,7 @@ CLIP Studio Paint and Photoshop, 2018
 
 <br>
 
-![City of the Sun: Grayscale](/assets/illus-3-bw.jpg)
+<!--![City of the Sun: Grayscale](/assets/illus-3-bw.jpg)-->
 
 ![City of the Sun: Line](/assets/illus-3-line.jpg)
 
