@@ -22,6 +22,8 @@ CLIP Studio Paint and Photoshop, 2018
 
 ![Menagerie](/assets/endless_2_clr.jpg)
 
+![City of the Sun](/assets/illus-3-final-900.jpg)
+
 <br>
 
 ![Endless Blue Cover: No text, line only](/assets/endless_1_comparison.jpg)
@@ -37,6 +39,18 @@ CLIP Studio Paint and Photoshop, 2018
 ![Menagerie: Costumes](/assets/endless_2_costumes.jpg)
 
 ![Menagerie: Creatures](/assets/endless_2_animals.jpg)
+
+![Pixiu Variants](/assets/pixiu-2.jpg)
+
+<br>
+
+<!--![City of the Sun: Grayscale](/assets/illus-3-bw.jpg)-->
+
+![City of the Sun: Line](/assets/illus-3-line.jpg)
+
+![City of the Sun: Costumes](/assets/endless_3_costumes.jpg)
+
+![City of the Sun: Creatures](/assets/endless_3_animals.jpg)
 
 <br>
 
