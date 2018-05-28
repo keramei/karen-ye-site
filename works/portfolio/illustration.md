@@ -5,6 +5,8 @@ order: 0
 ---
 # illustrations
 
+<br>
+
 ## endless blue, a novel
 
 Endless Blue is an ongoing project exploring the journey of two characters, Aoi and Top, as they travel from island to island in search of Aoi's home. Below are a series of book illustrations for a proposed novel.
@@ -49,6 +51,8 @@ CLIP Studio Paint and Photoshop, 2018
 
 <br>
 
+<br>
+
 ## lingering pasts
 
 Mock storybook spreads for a written short story that occurs after [Endless Blue Ch.0](https://karen-ye.com/portfolio/endless-blue/).
@@ -62,6 +66,8 @@ CLIP Studio Paint, 2017
 ![Lingering Pasts p.2](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c2693462416993.5a8f58c609d8a.jpg)
 
 ![Lingering Pasts p.3](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d5a22862416993.5a8f58c609885.jpg)
+
+<br>
 
 <br>
 
@@ -81,6 +87,8 @@ Pen and CLIP Studio Paint, 2017
 
 <br>
 
+<br>
+
 ## nighthawks
 
 A tribute to Edward Hopper.
@@ -94,6 +102,9 @@ Pen and CLIP Studio Paint, 2017
 <br>
 
 <br>
+
+<br>
+
 
 ## absolut treasure
 
@@ -109,6 +120,7 @@ Pen and CLIP Studio Paint, 2017
 
 <br>
 
+<br>
 
 ## lounging
 
