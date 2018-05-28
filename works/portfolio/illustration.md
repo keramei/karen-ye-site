@@ -7,6 +7,8 @@ order: 0
 
 <br>
 
+<br>
+
 ![Endless Blue Cover](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/12ef1465865505.5b0325c1515a7.jpg)
 
 ![Menagerie](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/440d2f65865505.5b0325c150731.jpg)
@@ -15,7 +17,7 @@ order: 0
 
 ## endless blue, a novel
 
-Endless Blue is an ongoing project exploring the journey of two characters, Aoi and Top, as they travel from island to island in search of Aoi's home. 
+An ongoing project exploring the journey of two characters, Aoi and Top, as they travel from island to island in search of Aoi's home. 
 
 CLIP Studio Paint and Photoshop, 2018
 
