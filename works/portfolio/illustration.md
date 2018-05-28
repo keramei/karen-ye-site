@@ -7,7 +7,7 @@ order: 0
 
 ## endless blue, a novel
 
-A series of book illustrations for a proposed novel.
+Endless Blue is an ongoing project exploring the journey of two characters, Aoi and Top, as they travel from island to island in search of Aoi's home. Below are a series of book illustrations for a proposed novel.
 
 CLIP Studio Paint and Photoshop, 2018
 
