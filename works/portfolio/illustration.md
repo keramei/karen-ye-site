@@ -13,39 +13,37 @@ CLIP Studio Paint and Photoshop, 2018
 
 <br>
 
-![Endless Blue Cover](/assets/endless_1_clr.jpg)
+![Endless Blue Cover](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/12ef1465865505.5b0325c1515a7.jpg)
 
-![Menagerie](/assets/endless_2_clr.jpg)
+![Menagerie](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/440d2f65865505.5b0325c150731.jpg)
 
-![City of the Sun](/assets/illus-3-final-900.jpg)
-
-<br>
-
-![Endless Blue Cover: No text, line only](/assets/endless_1_comparison.jpg)
-
-![Canyon Island Costumes](/assets/endless_1_costumes.jpg)
-
-![Canyon Island Creatures](/assets/endless_1_animals.jpg)
+![City of the Sun](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d3960d65865505.5b0325c14f6e3.jpg)
 
 <br>
 
-![Menagerie: No text, line only](/assets/endless_2_comparison.jpg)
+![Endless Blue Cover: No text, line only](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2333ff65865505.5b0325c14feb6.jpg)
 
-![Menagerie: Costumes](/assets/endless_2_costumes.jpg)
+![Canyon Island Costumes](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/aa763f65865505.5b0325c14e9ab.jpg)
 
-![Menagerie: Creatures](/assets/endless_2_animals.jpg)
-
-![Pixiu Variants](/assets/pixiu-2.jpg)
+![Canyon Island Creatures](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ec72065865505.5b0325c14f14b.jpg)
 
 <br>
 
-<!--!\\[City of the Sun: Grayscale](/assets/illus-3-bw.jpg)-->
+![Menagerie: No text, line only](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/637ab665865505.5b0325c14e1ad.jpg)
 
-![City of the Sun: Line](/assets/illus-3-line.jpg)
+![Menagerie: Costumes](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a24dea65865505.5b0325c151d71.jpg)
 
-![City of the Sun: Costumes](/assets/endless_3_costumes.jpg)
+![Menagerie: Creatures](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6438c565865505.5b0325c150cca.jpg)
 
-![City of the Sun: Creatures](/assets/endless_3_animals.jpg)
+![Pixiu Variants](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/51c70f65865505.5b0325c14d9f4.jpg)
+
+<br>
+
+![City of the Sun: Line](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bc5d7a65865505.5b0325c151155.jpg)
+
+![City of the Sun: Costumes](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/349a1065865505.5b0325c14d241.jpg)
+
+![City of the Sun: Creatures](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/320bc165865505.5b0325c1502ac.jpg)
 
 <br>
 
